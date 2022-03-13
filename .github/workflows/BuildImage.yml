@@ -3,7 +3,7 @@ name: Build Image
 on: [push, pull_request, workflow_dispatch]
 
 env:
-  ENDPOINT: "nex/code-server-nomad"
+  ENDPOINT: "akauble/code-server-nomad"
   BRANCH: "master"
 
 jobs:
