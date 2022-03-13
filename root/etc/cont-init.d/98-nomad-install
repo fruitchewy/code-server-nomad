@@ -3,7 +3,7 @@
 echo "*** nomad installer ***"
 
 curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
-echo "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" >> /etc/sources.list.d
+echo "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" >> /etc/apt/sources.list
 apt-get update && apt-get install -y nomad
 
 echo "export NOMAD_ADDR=http://nomad-clients.service.consul:4646" >> /config/.bashrc
